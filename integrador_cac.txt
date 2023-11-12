@@ -1,0 +1,11 @@
+CREATE DATABASE integrador_cac;
+USE integrador_cac;
+CREATE TABLE oradores(
+    id_orador INT(11) NOT NULL AUTO_INCREMENT,
+    nombre VARCHAR(40) CHARACTER SET latin1 COLLATE latin1_swedish_ci,
+    apellido VARCHAR(40) CHARACTER SET latin1 COLLATE latin1_swedish_ci,
+    mail VARCHAR(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci, 
+    tema VARCHAR(300) CHARACTER SET latin1 COLLATE latin1_swedish_ci,
+    fecha_alta TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id_orador)
+);
